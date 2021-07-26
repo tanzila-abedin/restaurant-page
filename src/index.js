@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import navUl from "./navbar";
 import homePage from './homePage';
+import menuPage from './menu'
 
 function component() {
   const element = document.createElement("div");
@@ -16,20 +17,20 @@ document.body.appendChild(component());
 // ////////////////////////
   const content = document.getElementById('content')
   
-  const outerContainer = document.creatElement('div');
-  outerContainer.id = 'contain';
-  content.appendChild(outerContainer);
+  // const outerContainer = document.createElement('div');
+  // outerContainer.id = 'contain';
+  // content.appendChild(outerContainer);
 
-  const navbar = document.creatElement('nav');
+  const navbar = document.createElement('nav');
   navbar.classList.add = ("navbar","navbar-expand-lg", "navbar-light","bg-light");
   
-  outerContainer.appendChild(navbar);
+  content.appendChild(navbar);
   navbar.appendChild(navUl());
 
   
   const main = document.createElement('div')
   main.classname = "main";
-  outerContainer.appendChild(main);
+  content.appendChild(main);
   
   main.appendChild(homePage())
 
