@@ -1,12 +1,12 @@
 import _ from 'lodash';
-import navbar from "./navbar";
-
+import navUl from "./navbar";
+import homePage from './homePage';
 
 function component() {
   const element = document.createElement("div");
 
  // Lodash, now imported by this script
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
+  element.innerHTML = _.join(["Hello", "world"], " ");
 
   return element;
 }
@@ -14,45 +14,44 @@ function component() {
 document.body.appendChild(component());
 
 // ////////////////////////
+  const content = document.getElementById('content')
+  
+  const outerContainer = document.creatElement('div');
+  outerContainer.id = 'contain';
+  content.appendChild(outerContainer);
 
-const content = document.getElementById('content')
- 
-const navbar = document.creatElement('nav')
+  const navbar = document.creatElement('nav');
+  navbar.classList.add = ("navbar","navbar-expand-lg", "navbar-light","bg-light");
+  
+  outerContainer.appendChild(navbar);
+  navbar.appendChild(navUl());
 
-content.appendChild(navbar);
-content.appendChild(navbar());
+  
+  const main = document.createElement('div')
+  main.classname = "main";
+  outerContainer.appendChild(main);
+  
+  main.appendChild(homePage())
 
-const main = document.createElement('div')
-
-content.appendChild(main);
-
-const heading = document.createElement("h5");
-heading.className = "nav  pb-2";
-heading.innerHTML += "<h5 class='Prime Cafe</h5>";
-
-main.appendChild(heading);
-// main.appendChild()
-
-
-const registerEvents = () => {
+  const registerEvents = () => {
   const home = document.getElementById("home");
   const menu = document.getElementById("menu");
   const contact = document.getElementById("contact");
 
   home.addEventListener("click", () => {
-    body.innerHTML = "";
+    navbar.innerHTML = "Home";
     navbar.appendChild(homePage());
   });
 
   menu.addEventListener("click", () => {
-    navbar.innerHTML = "";
+    navbar.innerHTML = "Menu";
     navbar.appendChild(menuPage());
   });
 
   contact.addEventListener("click", () => {
-    navbar.innerHTML = "";
+    navbar.innerHTML = "Contact";
     navbar.appendChild(contactPage());
   });
-};
+ };
 
 registerEvents();
