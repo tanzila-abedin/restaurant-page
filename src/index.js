@@ -1,36 +1,42 @@
 import _ from 'lodash';
 import navUl from "./navbar";
 import homePage from './homePage';
-import menuPage from './menu'
+import displayMenu from './menu';
+import contactPage from './contact';
 
-function component() {
-  const element = document.createElement("div");
-
- // Lodash, now imported by this script
-  element.innerHTML = _.join(["Hello", "world"], " ");
-
-  return element;
-}
-
-document.body.appendChild(component());
 
 // ////////////////////////
-  const content = document.getElementById('content')
+  // const content = document.getElementById('content')
   
-  // const outerContainer = document.createElement('div');
-  // outerContainer.id = 'contain';
-  // content.appendChild(outerContainer);
+  const outerContainer = document.createElement('div');
+  outerContainer.id = 'container';
+  outerContainer.className = 'container-fluid'
+  document.body.appendChild(outerContainer);
+
+  const navHeader = document.createElement('header')
+  const banner = new Image();
+  banner.src = "../assets/logo.jpeg";
+  banner.id = 'logo-main'
 
   const navbar = document.createElement('nav');
-  navbar.classList.add = ("navbar","navbar-expand-lg", "navbar-light","bg-light");
-  
-  content.appendChild(navbar);
+  navbar.classList.add(
+    "navbar",
+    "navbar-dark",
+    "d-flex",
+    "flex-column",
+    "justify-content-center"
+  );
+  navbar.id ="navBar";
+
+  outerContainer.appendChild(navHeader);
+  navHeader.appendChild(navbar);
+  navbar.appendChild(banner)
   navbar.appendChild(navUl());
 
   
   const main = document.createElement('div')
-  main.classname = "main";
-  content.appendChild(main);
+  main.classList.add("main","text-center");
+  outerContainer.appendChild(main);
   
   main.appendChild(homePage())
 
@@ -39,19 +45,20 @@ document.body.appendChild(component());
   const menu = document.getElementById("menu");
   const contact = document.getElementById("contact");
 
+
   home.addEventListener("click", () => {
-    navbar.innerHTML = "Home";
-    navbar.appendChild(homePage());
+    main.innerText = "";
+    main.appendChild(homePage());
   });
 
   menu.addEventListener("click", () => {
-    navbar.innerHTML = "Menu";
-    navbar.appendChild(menuPage());
+    main.innerText = "";
+    main.appendChild(displayMenu());
   });
 
   contact.addEventListener("click", () => {
-    navbar.innerHTML = "Contact";
-    navbar.appendChild(contactPage());
+    main.innerText = "";
+    main.appendChild(contactPage());
   });
  };
 
