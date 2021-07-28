@@ -1,10 +1,10 @@
 const homePage = () => {
   const homeContainer = document.createElement('div')
 
-  const heading = document.createElement("h2");
-  heading.className = "nav  pb-2";
-  heading.innerText = "Tanzila's Cafe";
-  homeContainer.appendChild(heading)
+  // const heading = document.createElement("h2");
+  // heading.className = "text-center";
+  // heading.innerText = "Tanzila's Cafe";
+  // homeContainer.appendChild(heading)
 
   const about = document.createElement("div");
   about.classname = "about";
@@ -15,7 +15,10 @@ const homePage = () => {
 
   const aboutPara = document.createElement("p");
   aboutPara.className = "about-paragraph";
-  aboutPara.innerText = "Welcome to the home of traditional homemade pies.The Tanzila's Cafe in Johannesburg  has been our home since 2010 and has been at the centre of the community ever since. In that time, we've found a way of doing things that has won the hearts of thousands of pie-eaters. That’s why we stick to what we’re good at, with our secret recipes and cooking methods, our prime cuts of meat and our specially-blended pastry."
+  aboutPara.innerHTML = `Welcome to the home of traditional homemade pies.The Tanzila's Cafe </br> 
+  in Johannesburg  has been our home since 2010 and has been at the centre of the community ever since.</br> In that time, we've found a way of doing things that has won the hearts of thousands of pie-eaters.</br> 
+  That’s why we stick to what we’re good at, with our secret recipes and cooking methods,</br>
+   our prime cuts of meat and our specially-blended pastry.`;
   about.appendChild(aboutPara)
 
   const hours = document.createElement("div");
@@ -27,7 +30,14 @@ const homePage = () => {
 
   const hoursPara = document.createElement("p");
   hoursPara.className = "about-paragraph";
-  hoursPara.innerText = "Sunday: 8am - 8pm";
+  hoursPara.innerHTML = `
+                          Sunday: 8am - 8pm</br>
+                          Monday: 6am - 6pm</br>
+                          Tuesday: 6am - 6pm</br>
+                          Wednesday: 6am - 6pm</br>
+                          Thursday: 6am - 10pm</br>
+                          Friday: 6am - 10pm</br>
+                          Saturday: 8am - 10pm</br>`;
   hours.appendChild(hoursPara);
   
   const location = document.createElement("div");
