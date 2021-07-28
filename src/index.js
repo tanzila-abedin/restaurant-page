@@ -3,9 +3,6 @@ import homePage from './homePage';
 import displayMenu from './menu';
 import contactPage from './contact';
 
-// ////////////////////////
-// const content = document.getElementById('content')
-
 const outerContainer = document.createElement('div');
 outerContainer.id = 'container';
 outerContainer.className = 'container-fluid';
