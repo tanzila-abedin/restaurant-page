@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
 
-[Click here to view live demo](https://ryelbanfield.github.io/restaurant-page/)
+[To View: ](https://tanzila-abedin.github.io/restaurant-page/
 
 A simple restaurant website.
 
