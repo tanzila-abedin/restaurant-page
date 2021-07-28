@@ -3,9 +3,6 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
-
-[Click me to view live demo]( https://tanzila-abedin.github.io/restaurant-page/)
-
 A simple restaurant website.
 
 This website was built using just JavaScript to generate all of the content on the page.
