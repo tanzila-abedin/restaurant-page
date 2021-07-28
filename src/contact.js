@@ -1,9 +1,9 @@
- const contactPage = () => {
-    const contactContainer = document.createElement('div')
-    const contact = document.createElement("div");
-    contact.setAttribute("id", "contact");
-    contact.setAttribute("data-tab-content", "");
-    contact.innerHTML = `
+const contactPage = () => {
+  const contactContainer = document.createElement('div');
+  const contact = document.createElement('div');
+  contact.setAttribute('id', 'contact');
+  contact.setAttribute('data-tab-content', '');
+  contact.innerHTML = `
     <div class="hero">
     <h1>Contact us</h1>
   </div>
@@ -56,8 +56,8 @@
     ></iframe>
   </div>`;
 
-contactContainer.appendChild(contact);
-return contactContainer;
-}
+  contactContainer.appendChild(contact);
+  return contactContainer;
+};
 
-export default contactPage
+export default contactPage;
