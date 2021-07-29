@@ -1,6 +1,6 @@
 const homePage = () => {
   const homeContainer = document.createElement('div');
-  
+
   const about = document.createElement('div');
   about.classname = 'about';
   const subheadOne = document.createElement('h3');

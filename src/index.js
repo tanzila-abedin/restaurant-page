@@ -8,7 +8,7 @@ outerContainer.id = 'content';
 outerContainer.className = 'container-fluid';
 document.body.appendChild(outerContainer);
 
-const navHeader = document.createElement('header'); 
+const navHeader = document.createElement('header');
 const banner = new Image();
 banner.src = '../assets/logo.jpeg';
 banner.id = 'logo-main';
