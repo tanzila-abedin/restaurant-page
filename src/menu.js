@@ -29,11 +29,11 @@ const createMenu = () => {
 
   menu.appendChild(
     createMenuItem(
-      "Chicken & Mushroom",
-      "price: R 25.00",
-      "./assets/meatpie3.jpg",
-  
-    )
+      'Chicken & Mushroom',
+      'price: R 25.00',
+      './assets/meatpie3.jpg',
+
+    ),
   );
   menu.appendChild(
     createMenuItem(
@@ -53,14 +53,14 @@ const createMenu = () => {
     createMenuItem(
       'Pepper Steak',
       'Price: R 25.00',
-      './assets/meat pie 6.jpeg',
+      './assets/meatpie6.jpeg',
     ),
   );
   menu.appendChild(
     createMenuItem(
       'Cheese & Salami',
       'Price: R 25.00',
-      '../dist/assets/meatpie7.jpeg',
+      './assets/meatpie7.jpeg',
     ),
   );
   menu.appendChild(
