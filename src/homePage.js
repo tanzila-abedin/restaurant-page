@@ -44,7 +44,8 @@ const homePage = () => {
 
   const locationPara = document.createElement('p');
   locationPara.className = 'about-paragraph';
-  locationPara.innerText = '123 Forest Drive, Forestville, Maine';
+  locationPara.innerText =
+    "No 6 Fish River Street, Lenasia,Johannesburg, South Africa 1827";
   location.appendChild(locationPara);
 
   return homeContainer;
