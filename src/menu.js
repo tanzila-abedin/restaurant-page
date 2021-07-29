@@ -31,42 +31,42 @@ const createMenu = () => {
     createMenuItem(
       'Chicken & Mushroom',
       'price: R 25.00',
-      '../assets/meat pie 3.jpg',
+      '../dist/assets/meat pie 3.jpg',
     ),
   );
   menu.appendChild(
     createMenuItem(
       'Cornish',
       'Price: R 25.00',
-      '../assets/meatpie2.jpeg',
+      '../dist/assets/meatpie2.jpeg',
     ),
   );
   menu.appendChild(
     createMenuItem(
       'Spinach Cheese & Corn',
       'Price: R 25.00',
-      '../assets/meat pie 5.jpeg',
+      '../dist/assets/meat pie 5.jpeg',
     ),
   );
   menu.appendChild(
     createMenuItem(
       'Pepper Steak',
       'Price: R 25.00',
-      '../assets/meat pie 6.jpeg',
+      '../dist/assets/meat pie 6.jpeg',
     ),
   );
   menu.appendChild(
     createMenuItem(
       'Cheese & Salami',
       'Price: R 25.00',
-      '../assets/meat pie 7.jpeg',
+      '../dist/assets/meat pie 7.jpeg',
     ),
   );
   menu.appendChild(
     createMenuItem(
       'Sausage Roll',
       'Price: R25.00',
-      '../assets/meat piwe 4.jpeg',
+      '../dist/assets/meat piwe 4.jpeg',
     ),
   );
 
