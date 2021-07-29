@@ -9,6 +9,9 @@ This website was built using just JavaScript to generate all of the content on t
 
 Additional description about the project and its features.
 
+[Click to view live demo](https://tanzila-abedin.github.io/restaurant-page/)
+
+
 ## Built With
 
 ![JAVASCRIPT](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E")
