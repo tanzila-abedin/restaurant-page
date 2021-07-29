@@ -10,7 +10,7 @@ document.body.appendChild(outerContainer);
 
 const navHeader = document.createElement('header');
 const banner = new Image();
-banner.src = "../dist/assets/logo.jpeg";
+banner.src = '../dist/assets/logo.jpeg';
 banner.id = 'logo-main';
 
 const navbar = document.createElement('nav');
