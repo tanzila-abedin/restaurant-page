@@ -1,11 +1,6 @@
 const homePage = () => {
   const homeContainer = document.createElement('div');
-
-  // const heading = document.createElement("h2");
-  // heading.className = "text-center";
-  // heading.innerText = "Tanzila's Cafe";
-  // homeContainer.appendChild(heading)
-
+  
   const about = document.createElement('div');
   about.classname = 'about';
   const subheadOne = document.createElement('h3');
